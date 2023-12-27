@@ -38,7 +38,12 @@ export const SocialLinks = [
     href: "https://twitter.com/i/flow/login",
     icon: <FaTwitterSquare />,
   },
-  { id: nanoid(), href: "https://in.linkedin.com/", icon: <FaLinkedinIn /> },
+  {
+    id: nanoid(),
+    href:
+      "https://www.linkedin.com/in/vaibhav-joshi-1a723512b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    icon: <FaLinkedinIn />,
+  },
 ];
 
 export const Skill = [
@@ -81,11 +86,11 @@ export const PrivateLinks = [
   {
     id: nanoid(),
     icon: <FaWhatsapp />,
-    text: "WhatsApp",
+    text: "+91 9834061404",
   },
   {
     id: nanoid(),
     icon: <MdEmail />,
-    text: "Email",
+    text: "vaibhavjoshi119@gmail.com",
   },
 ];
