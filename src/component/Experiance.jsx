@@ -14,10 +14,13 @@ const Experiance = () => {
       </div>
 
       <div className="flex flex-col gap-y-5 max-sm:gap-y-2 ">
-        <small className="bg-sky-300 py-1 px-1 rounded-2xl">Job Progress</small>
+        <small className="bg-sky-300 py-1 px-1 rounded-2xl">
+          Job Description
+        </small>
         <h5 className=" max-w-xl tracking-wider text-xl px-1 max-sm:text-xl max-sm:tracking-wide  ">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-          dolores, nulla quod quam nesciunt facilis!
+          Leas supplier relations, negotiating contracts, and monitoring
+          performance. drive product quality assurance and manage end-to-end new
+          product development
         </h5>
       </div>
     </div>

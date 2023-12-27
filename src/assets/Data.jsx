@@ -88,9 +88,4 @@ export const PrivateLinks = [
     icon: <FaWhatsapp />,
     text: "+91 9834061404",
   },
-  {
-    id: nanoid(),
-    icon: <MdEmail />,
-    text: "vaibhavjoshi119@gmail.com",
-  },
 ];

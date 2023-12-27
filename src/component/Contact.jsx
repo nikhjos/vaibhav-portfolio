@@ -9,25 +9,27 @@ const Contact = () => {
     <section id="Contact">
       <PageTitle text="Contact" />
       <div className="mx-auto max-w-7xl px-4 flex flex-col sm:flex-row justify-center gap-10 h-screen items-center max-sm:justify-start max-sm:mt-10">
-        <div className="flex flex-col max-sm:flex-row gap-20 max-sm:gap-y-5 min-w-12 max-w-lg basis-2/4 h-4/5 max-sm:basis-1 justify-center">
+        <div className="flex flex-col max-sm:grid max-sm:grid-cols-2 max-sm:gap-x-16 max-sm:max-w-md sm:gap-20  min-w-12 max-w-lg basis-2/4 h-4/5 max-sm:basis-1 justify-center max-sm:max-w-12">
           {PrivateLinks.map((link) => {
             const { id, icon, text } = link;
             return (
               <article
-                className=" bg-sky-300 mx-auto flex flex-col px-2 w-72  justify-center items-center w-2/5 py-2 max-sm:py-1 rounded-2xl px-3 hover:bg-white border-sky-300 duration:3000  "
+                className=" bg-sky-300 mx-auto flex flex-col px-2 w-72  justify-center items-center w-2/5 py-2 max-sm:py-1 rounded-2xl px-3 hover:bg-white border-sky-300 duration:3000 max-sm:max-w-28 max-sm:overflow-hidden max-sm:py-2 max-sm:px-2"
                 key={id}
               >
                 <p className="mb-3 text-4xl text-slate-600 hover:text-black">
                   {icon}{" "}
                 </p>
-                <button>{text} </button>
+                <p className="text-center max-w-32 max-sm:text-pretty max-sm:min-h-12  ">
+                  {text}{" "}
+                </p>
               </article>
             );
           })}
         </div>
 
         <div className="gap-4 min-w-12 max-w-lg text-center px-5 bg-sky-400 rounded-2xl flex flex-col gap-y-20 basis-2/4 max-sm:basis-3/4 h-4/5">
-          <PageTitle text="contact form" />
+          <PageTitle text="Email Me" />
           <form
             action="https://formsubmit.co/vaibhavjoshi119@gmail.com"
             method="POST"

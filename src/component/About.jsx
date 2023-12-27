@@ -8,10 +8,10 @@ const About = () => {
   const [showInfo, setShowInfo] = useState(false);
 
   return (
-    <section className=" bg-white h-screen" id="About">
+    <section className=" bg-white h-screen mb-20" id="About">
       <PageTitle text="About Me" />
 
-      <div className="mx-auto max-w-7xl  px-4 sm:mt-20 flex justify-center gap-x-20 max-sm:flex-col max-sm:h-min sm:flex-row  mb-10 ">
+      <div className="mx-auto max-w-7xl  px-4 sm:mt-20  flex justify-center gap-x-20 py-10 max-sm:flex-col  sm:flex-row  mb-10 ">
         <div className=" flex justify-center items-center gap-y-16 flex-col   max-sm:gap-y-8  ">
           <div>
             <img
@@ -44,7 +44,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex  sm:pt-10 basis-1/2  max-sm:h-screen max-sm:pt-2 max-sm:flex-col max-sm:h-fit ">
+        <div className="flex  sm:pt-15 sm:basis-1/2  max-sm:h-screen max-sm:pt-10 max-sm:flex-col max-sm:h-fit max-sm:mb-10 ">
           {!showInfo ? (
             <PersonalInfo showInfo={showInfo} />
           ) : (
