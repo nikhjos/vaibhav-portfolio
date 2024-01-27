@@ -81,17 +81,20 @@ const About = () => {
           </div>
 
           <div className={showExp ? "exp   w-full capitalize" : "hidden"}>
-            <h2 className="text-5xl text-center mb-5">Experiance</h2>
+            <h2 className="text-4xl text-center mb-5">Experiance</h2>
 
             <div className=" text-center mx-auto ">
-              <h2 className="text-5xl  mb-2">Sanjeev auto pvt ltd</h2>
-              <h4 className="text-2xl  mb-2">from 2018 to present</h4>
+              <h2 className="text-5xl  mb-2 max-sm:text-3xl ">
+                Sanjeev auto pvt ltd
+              </h2>
+              <h4 className="text-2xl tracking-wider  mb-2 max-sm:text-xl max-sm:mb-5">
+                from 2018 to present
+              </h4>
 
-              <p className=" tracking-wider leading-2 w-[70%] mx-auto">
+              <p className=" tracking-wider leading-2 w-[70%] mx-auto max-sm:w-full max-sm:text-justify">
                 As a QA engineer , I focus on new development, inventory
-                tracking, and ensuring product quality, playing a crucial role
-                in maintaining and improving the overall quality of the software
-                or system i work on
+                tracking, and ensuring product quality, communicate effectively
+                and implement risk mitigation strategied in the supply chain
               </p>
             </div>
           </div>
