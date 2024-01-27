@@ -40,8 +40,7 @@ export const SocialLinks = [
   },
   {
     id: nanoid(),
-    href:
-      "https://www.linkedin.com/in/vaibhav-joshi-1a723512b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    href: "https://www.linkedin.com/in/vaibhav-joshi-1a723512b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     icon: <FaLinkedinIn />,
   },
 ];
@@ -51,29 +50,25 @@ export const Skill = [
     id: nanoid(),
     title: "Quality-Assurance",
     img: Qa,
-    text:
-      "Implementing rigorous quality control measure to ensure products meet the highest standard",
+    text: "Implementing rigorous quality control measure to ensure products meet the highest standard",
   },
   {
     id: nanoid(),
     title: "New Development",
     img: Dev,
-    text:
-      "Driving innovation through the creation of cutting-edge solutions and fetures",
+    text: "Driving innovation through the creation of cutting-edge solutions and fetures",
   },
   {
     id: nanoid(),
     title: "Supply Chain Management",
     img: Ic,
-    text:
-      "Strategically managing inventory and fostering strong relationship with suppliers for seamless operations",
+    text: "Strategically managing inventory and fostering strong relationship with suppliers for seamless operations",
   },
   {
     id: nanoid(),
     title: "Team Leader",
     img: Tm,
-    text:
-      "Inspiring and motivating team member to achiew collective goals and exceed performance expectation",
+    text: "Inspiring and motivating team member to achiew collective goals and exceed performance expectation",
   },
 ];
 
@@ -82,10 +77,12 @@ export const PrivateLinks = [
     id: nanoid(),
     icon: <FaInstagramSquare />,
     text: "Instagram",
+    href: "https://www.instagram.com/vaibhavjoshi849?igsh=eXBINHI4ajc1MDh6",
   },
   {
     id: nanoid(),
     icon: <FaWhatsapp />,
-    text: "+91 9834061404",
+    text: "WhatsApp",
+    href: "https://wa.me/+917620270947",
   },
 ];

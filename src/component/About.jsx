@@ -1,55 +1,124 @@
 import React, { useState } from "react";
 import aboutImg from "../assets/SmallImage.png";
-import PersonalInfo from "./PersonalInfo";
-import Experiance from "./Experiance";
+
 import PageTitle from "./PageTitle";
 
 const About = () => {
-  const [showInfo, setShowInfo] = useState(false);
+  const [showInfo, setShowInfo] = useState(true);
+  const [showExp, setShowExp] = useState(false);
+  const [showSkills, setShowSkills] = useState(false);
 
   return (
-    <section className=" bg-white h-screen mb-20" id="About">
+    <section className=" h-screen max-sm:h-max  mb-10" id="About">
       <PageTitle text="About Me" />
 
-      <div className="mx-auto max-w-7xl  px-4 sm:mt-20  flex justify-center gap-x-20 py-10 max-sm:flex-col  sm:flex-row  mb-10 ">
-        <div className=" flex justify-center items-center gap-y-16 flex-col   max-sm:gap-y-8  ">
+      <div className=" about mx-auto max-w-7xl px-4 py-4 h-[80%] flex justify-between max-sm:flex-col max-sm:h-full max-sm:gap-y-10 ">
+        <div className="left-about bg-neutral rounded-2xl  h-full  w-[40%]  flex flex-col justify-evenly items-center max-sm:w-full max-sm:gap-y-10 max-sm:py-5">
           <div>
-            <img
-              src={aboutImg}
-              alt="about"
-              className="inline-block  h-96  max-sm:h-44 rounded-2xl bg-sky-300 object-cover object-center"
-            />
+            <img src={aboutImg} alt="image" className="rounded-2xl" />
           </div>
-          <div className="flex  sm:flex-row justify-center gap-x-10  items-center ">
+
+          <div className="btn-container flex justify-between w-[70%]">
             <button
-              className={
-                !showInfo
-                  ? "border-2 border-sky-500 bg-sky-300 px-2 py-2 text-slate-900 text-3xl inline-block  rounded-2xl  text-black text-bold  hover:bg-sky-300 duration:200  max-sm:text-xl  "
-                  : " px-2 py-2 text-slate-900 text-3xl  rounded-2xl inline-block  hover:bg-sky-300 duration:200 max-sm:text-xl"
-              }
-              onClick={() => setShowInfo(false)}
-            >
-              Personal Info
-            </button>
-            <button
+              type="button"
               className={
                 showInfo
-                  ? "border-2 border-sky-500  bg-sky-300 px-2 py-2 text-slate-900 text-3xl rounded-2xl  inline-block text-black text-bold hover:bg-sky-300 duration:200 max-sm:text-xl"
-                  : " px-2 py-2 text-slate-900 text-3xl rounded-2xl  inline-block hover:bg-sky-300 duration:200 max-sm:text-xl"
+                  ? "btn btn-accent text-2xl bg-primary rounded-2xl"
+                  : "btn btn-accent text-2xl rounded-2xl"
               }
-              onClick={() => setShowInfo(true)}
+              onClick={() => {
+                setShowInfo(true);
+                setShowSkills(false);
+                setShowExp(false);
+              }}
             >
-              Experiance
+              Info
+            </button>
+            <button
+              type="button"
+              className={
+                showExp
+                  ? "btn btn-accent text-2xl bg-primary rounded-2xl"
+                  : "btn btn-accent text-2xl rounded-2xl"
+              }
+              onClick={() => {
+                setShowInfo(false);
+                setShowSkills(false);
+                setShowExp(true);
+              }}
+            >
+              Exp
+            </button>
+            <button
+              type="button"
+              className={
+                showSkills
+                  ? "btn btn-accent text-2xl bg-primary rounded-2xl"
+                  : "btn btn-accent text-2xl rounded-2xl"
+              }
+              onClick={() => {
+                setShowInfo(false);
+                setShowSkills(true);
+                setShowExp(false);
+              }}
+            >
+              Skills
             </button>
           </div>
         </div>
+        <div className="right-about   bg-neutral rounded-2xl text-accent   mx-auto w-[55%] h-full px-5 grid grid-cols-1 place-items-center max-sm:w-full max-sm:py-10 ">
+          <div className={showInfo ? "info  w-full" : "hidden"}>
+            <p className="text-3xl tracking-wider leading-2 ">Hello,</p>
+            <p className="tracking-wider leading-2 mt-2 text-2xl text-left indent-10">
+              I am <b> Vaibhav Rajendra Joshi,</b> born on{" "}
+              <b> 17 march 1996.</b> I earn my degree in Mechanical Engineering
+              from CSMS Collage. With 5 years of experiance as a Qa Engineers.
+              My experties lies in ensuring the precision and quality of Heat
+              Treatment processes. i've actively contributed to Lead supplier
+              relations, negotiating contracts, and monitoring performances.
+              Commited to upholding the highest standard, I thrive in optimizing
+              heat treatment methodologies for enhanced product performance
+            </p>
+          </div>
 
-        <div className="flex  sm:pt-15 sm:basis-1/2  max-sm:h-screen max-sm:pt-10 max-sm:flex-col max-sm:h-fit max-sm:mb-10 ">
-          {!showInfo ? (
-            <PersonalInfo showInfo={showInfo} />
-          ) : (
-            <Experiance showExp={showInfo} />
-          )}
+          <div className={showExp ? "exp   w-full capitalize" : "hidden"}>
+            <h2 className="text-5xl text-center mb-5">Experiance</h2>
+
+            <div className=" text-center mx-auto ">
+              <h2 className="text-5xl  mb-2">Sanjeev auto pvt ltd</h2>
+              <h4 className="text-2xl  mb-2">from 2018 to present</h4>
+
+              <p className=" tracking-wider leading-2 w-[70%] mx-auto">
+                As a QA engineer , I focus on new development, inventory
+                tracking, and ensuring product quality, playing a crucial role
+                in maintaining and improving the overall quality of the software
+                or system i work on
+              </p>
+            </div>
+          </div>
+
+          <div
+            className={
+              showSkills ? "skills  flex  justify-between w-full" : "hidden"
+            }
+          >
+            <div className="technical text-center mx-auto w-full">
+              <h4 className="text-3xl mb-2">Social</h4>
+              <div className=" text-xl mb-5 ">
+                <p>Team Leader</p>
+                <p>Creativity</p>
+                <p>Critical Thinking</p>
+                <p>Project Management</p>
+              </div>
+              <h4 className="text-3xl mb-2">Technical</h4>
+              <div className=" text-xl ">
+                <p>Quality Assurance</p>
+                <p>Computer </p>
+                <p>Thermodynamics</p>
+                <p>Auto Cad</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

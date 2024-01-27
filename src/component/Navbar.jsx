@@ -6,11 +6,11 @@ import Linkbar from "./Linkbar";
 const Navbar = () => {
   const [showBar, setShowBar] = useState(false);
   return (
-    <nav className="bg-sky-300">
+    <nav className="bg-neutral text-accent">
       <div className="mx-auto max-w-7xl px-4 py-4 flex flex-row sm:flex-row justify-between">
         <div>
           <h2 className="text-4xl font-bold tracking-wider">
-            Vaib<span className="text-orange-500">hav</span>
+            Vaib<span className="text-accent">hav</span>
           </h2>
         </div>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
               <a
                 key={id}
                 href={href}
-                className="text-xl  text-slate-900 hover:text-orange-900 duration:3000"
+                className="text-xl  hover:text-secondary duration:3000"
               >
                 {text}
               </a>

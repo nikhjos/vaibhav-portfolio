@@ -3,7 +3,7 @@ import { SocialLinks } from "../assets/Data";
 
 const Footer = () => {
   return (
-    <footer className="bg-sky-300">
+    <footer className="bg-neutral text-accent">
       <div className="flex flex-col gap-y-2 mx-auto max-w-7xl px-4 py-4 justify-center items-center">
         <div className="flex jsutify-center items-center  gap-x-4">
           {SocialLinks.map((link) => {
@@ -13,7 +13,7 @@ const Footer = () => {
                 key={id}
                 href={href}
                 target="_blank"
-                className="text-xl text-slate-600 hover:text-black duration:3000"
+                className="text-xl duration:3000"
               >
                 {icon}{" "}
               </a>
@@ -21,7 +21,7 @@ const Footer = () => {
           })}
         </div>
 
-        <a className="text-black" href="#Contact">
+        <a className="" href="#Contact">
           contact me
         </a>
       </div>

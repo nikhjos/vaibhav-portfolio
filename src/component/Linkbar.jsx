@@ -4,7 +4,7 @@ import { FaTimes } from "react-icons/fa";
 
 const Linkbar = ({ showBar, setShowBar }) => {
   return (
-    <nav className="bg-sky-500 opacity-1  fixed top-0 right-0 w-2/4 h-lvh max-h-screen  flex justify-center  ">
+    <nav className="bg-neutral opacity-1  fixed top-0 right-0 w-2/4 h-lvh max-h-screen  flex justify-center  ">
       <div className="fixed top-4 right-4 text-red-900">
         <button
           type="button"
