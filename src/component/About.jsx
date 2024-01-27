@@ -68,16 +68,15 @@ const About = () => {
         </div>
         <div className="right-about   bg-neutral rounded-2xl text-accent   mx-auto w-[55%] h-full px-5 grid grid-cols-1 place-items-center max-sm:w-full max-sm:py-10 ">
           <div className={showInfo ? "info  w-full" : "hidden"}>
-            <p className="text-3xl tracking-wider leading-2 ">Hello,</p>
+            <p className="text-3xl tracking-wider text-center leading-2 ">
+              Hello,
+            </p>
             <p className="tracking-wider leading-2 mt-2 text-2xl text-left indent-10">
               I am <b> Vaibhav Rajendra Joshi,</b> born on{" "}
               <b> 17 march 1996.</b> I earn my degree in Mechanical Engineering
               from CSMS Collage. With 5 years of experiance as a Qa Engineers.
               My experties lies in ensuring the precision and quality of Heat
-              Treatment processes. i've actively contributed to Lead supplier
-              relations, negotiating contracts, and monitoring performances.
-              Commited to upholding the highest standard, I thrive in optimizing
-              heat treatment methodologies for enhanced product performance
+              Treatment processes.
             </p>
           </div>
 

@@ -19,8 +19,8 @@ const Navbar = () => {
             {showBar ? "" : <FaBars />}
           </button>
 
-          <div>
-            {showBar && <Linkbar showBar={showBar} setShowBar={setShowBar} />}
+          <div className={showBar ? "active" : " hidden"}>
+            <Linkbar showBar={showBar} setShowBar={setShowBar} />
           </div>
         </div>
 
